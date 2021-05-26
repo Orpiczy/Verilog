@@ -1,0 +1,436 @@
+
+*** Running vivado
+    with args -log vp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vp.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source vp.tcl -notrace
+Command: synth_design -top vp -part xc7z010clg400-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'divider_32_20_0' is locked:
+* IP 'divider_32_20_0' contains one or more locked subcores.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4424 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 386.742 ; gain = 97.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vp' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:23]
+	Parameter Ta bound to: 8'b01001011 
+	Parameter Tb bound to: 8'b01110110 
+	Parameter Tc bound to: 8'b10000111 
+	Parameter Td bound to: 8'b10101111 
+INFO: [Synth 8-6157] synthesizing module 'rgb2ycbcr_v2_0' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-12180-DESKTOP-6BHNJAC/realtime/rgb2ycbcr_v2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2ycbcr_v2_0' (1#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-12180-DESKTOP-6BHNJAC/realtime/rgb2ycbcr_v2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'centroid' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/centroid.v:23]
+	Parameter IMG_H bound to: 64 - type: integer 
+	Parameter IMG_W bound to: 64 - type: integer 
+	Parameter REG_M00_SIZE bound to: 20 - type: integer 
+	Parameter REG_M10_SIZE bound to: 32 - type: integer 
+	Parameter REG_M01_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'divider_32_20_0' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-12180-DESKTOP-6BHNJAC/realtime/divider_32_20_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'divider_32_20_0' (2#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-12180-DESKTOP-6BHNJAC/realtime/divider_32_20_0_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'quotient' does not match port width (32) of module 'divider_32_20_0' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/centroid.v:128]
+WARNING: [Synth 8-689] width (11) of port connection 'quotient' does not match port width (32) of module 'divider_32_20_0' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/centroid.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'centroid' (3#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/centroid.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vis_centroid' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid.v:23]
+	Parameter IMG_H bound to: 64 - type: integer 
+	Parameter IMG_W bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vis_centroid' (4#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid.v:23]
+INFO: [Synth 8-6157] synthesizing module 'median5x5' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:23]
+	Parameter H_SIZE bound to: 83 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'delayLinieBRAM_WP' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/sources/delayLinieBRAM_WP.v:21]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter BRAM_SIZE_W bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'delayLineBRAM' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-12180-DESKTOP-6BHNJAC/realtime/delayLineBRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'delayLineBRAM' (5#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-12180-DESKTOP-6BHNJAC/realtime/delayLineBRAM_stub.v:6]
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (11) of module 'delayLineBRAM' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/sources/delayLinieBRAM_WP.v:69]
+WARNING: [Synth 8-689] width (16) of port connection 'dina' does not match port width (17) of module 'delayLineBRAM' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/sources/delayLinieBRAM_WP.v:70]
+WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (17) of module 'delayLineBRAM' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/sources/delayLinieBRAM_WP.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'delayLinieBRAM_WP' (6#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/sources/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-6157] synthesizing module 'delay_line_v1' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/delay_line_v1.v:23]
+	Parameter N bound to: 4 - type: integer 
+	Parameter DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'delay_block_v1' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/delay_block_v1.v:23]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_block_v1' (7#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/delay_block_v1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay_line_v1' (8#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/imports/new/delay_line_v1.v:23]
+WARNING: [Synth 8-6014] Unused sequential element row1_reg was removed.  [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:115]
+WARNING: [Synth 8-6014] Unused sequential element row3_reg was removed.  [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:116]
+WARNING: [Synth 8-6014] Unused sequential element row4_reg was removed.  [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:117]
+WARNING: [Synth 8-6014] Unused sequential element row5_reg was removed.  [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:118]
+WARNING: [Synth 8-3848] Net row2 in module/entity median5x5 does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'median5x5' (9#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/median5x5.v:23]
+WARNING: [Synth 8-3848] Net de_mux[7] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:39]
+WARNING: [Synth 8-3848] Net de_mux[6] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:39]
+WARNING: [Synth 8-3848] Net de_mux[5] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:39]
+WARNING: [Synth 8-3848] Net h_sync_mux[7] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:40]
+WARNING: [Synth 8-3848] Net h_sync_mux[6] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:40]
+WARNING: [Synth 8-3848] Net h_sync_mux[5] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:40]
+WARNING: [Synth 8-3848] Net v_sync_mux[7] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:41]
+WARNING: [Synth 8-3848] Net v_sync_mux[6] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:41]
+WARNING: [Synth 8-3848] Net v_sync_mux[5] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:41]
+WARNING: [Synth 8-3848] Net rgb_mux[7] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:38]
+WARNING: [Synth 8-3848] Net rgb_mux[6] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:38]
+WARNING: [Synth 8-3848] Net rgb_mux[5] in module/entity vp does not have driver. [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'vp' (10#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/new/vp.v:23]
+WARNING: [Synth 8-3331] design centroid has unconnected port hsync
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 441.875 ; gain = 152.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 441.875 ; gain = 152.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 441.875 ; gain = 152.426
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/rgb2ycbcr_v2_0/rgb2ycbcr_v2_0_in_context.xdc] for cell 'convert'
+Finished Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/rgb2ycbcr_v2_0/rgb2ycbcr_v2_0_in_context.xdc] for cell 'convert'
+Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0/divider_32_20_0_in_context.xdc] for cell 'center/x_sc'
+Finished Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0/divider_32_20_0_in_context.xdc] for cell 'center/x_sc'
+Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0/divider_32_20_0_in_context.xdc] for cell 'center/y_sc'
+Finished Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0/divider_32_20_0_in_context.xdc] for cell 'center/y_sc'
+Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'calc/ram/BRAM'
+Finished Parsing XDC File [d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.srcs/sources_1/ip/delayLineBRAM/delayLineBRAM/delayLineBRAM_in_context.xdc] for cell 'calc/ram/BRAM'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 767.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 767.457 ; gain = 478.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 767.457 ; gain = 478.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for convert. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for center/x_sc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for center/y_sc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for calc/ram/BRAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 767.457 ; gain = 478.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 767.457 ; gain = 478.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 4     
+	   5 Input      5 Bit       Adders := 1     
+	   5 Input      3 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 27    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module centroid 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 5     
+Module vis_centroid 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module delayLinieBRAM_WP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module delay_block_v1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module median5x5 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      5 Bit       Adders := 1     
+	   5 Input      3 Bit       Adders := 4     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (calc/D51_reg[1]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D51_reg[0]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D52_reg[1]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D52_reg[0]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D53_reg[1]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D53_reg[0]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D54_reg[1]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D54_reg[0]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D55_reg[1]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (calc/D55_reg[0]) is unused and will be removed from module vp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 767.457 ; gain = 478.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 769.938 ; gain = 480.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 770.301 ; gain = 480.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (vis/y_pos_reg[10]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (vis/y_pos_reg[6]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (vis/y_pos_reg[9]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (vis/y_pos_reg[8]) is unused and will be removed from module vp.
+WARNING: [Synth 8-3332] Sequential element (vis/y_pos_reg[7]) is unused and will be removed from module vp.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|vp          | calc/D33_reg[1] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|vp          | calc/D45_reg[1] | 5      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|vp          | calc/D25_reg[3] | 5      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|vp          | calc/D15_reg[1] | 5      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |rgb2ycbcr_v2_0  |         1|
+|2     |delayLineBRAM   |         1|
+|3     |divider_32_20_0 |         2|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |delayLineBRAM      |     1|
+|2     |divider_32_20_0    |     1|
+|3     |divider_32_20_0__1 |     1|
+|4     |rgb2ycbcr_v2_0     |     1|
+|5     |BUFG               |     1|
+|6     |CARRY4             |    33|
+|7     |LUT1               |     7|
+|8     |LUT2               |    33|
+|9     |LUT3               |    21|
+|10    |LUT4               |    20|
+|11    |LUT5               |    58|
+|12    |LUT6               |    76|
+|13    |SRL16E             |     9|
+|14    |FDRE               |   232|
+|15    |IBUF               |    31|
+|16    |OBUF               |    27|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+------------------+------+
+|      |Instance                       |Module            |Cells |
++------+-------------------------------+------------------+------+
+|1     |top                            |                  |   658|
+|2     |  calc                         |median5x5         |   167|
+|3     |    pixel_delay                |delay_line_v1     |    20|
+|4     |      \(null)[0].single_delay  |delay_block_v1    |     4|
+|5     |      \(null)[1].single_delay  |delay_block_v1_0  |    16|
+|6     |    ram                        |delayLinieBRAM_WP |    42|
+|7     |  center                       |centroid          |   311|
+|8     |  vis                          |vis_centroid      |    78|
++------+-------------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 793.684 ; gain = 504.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 793.684 ; gain = 178.652
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 793.684 ; gain = 504.234
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 793.684 ; gain = 512.629
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Operacje_kontekstowe/back_up/ready_hdmi_in/hdmi_vga_zybo.runs/synth_1/vp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vp_utilization_synth.rpt -pb vp_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 793.684 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 13 00:40:59 2021...

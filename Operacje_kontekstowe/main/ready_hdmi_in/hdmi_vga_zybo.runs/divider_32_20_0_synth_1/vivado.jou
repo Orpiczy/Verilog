@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May  5 16:44:28 2021
+# Process ID: 18732
+# Current directory: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.runs/divider_32_20_0_synth_1
+# Command line: vivado.exe -log divider_32_20_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source divider_32_20_0.tcl
+# Log file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.runs/divider_32_20_0_synth_1/divider_32_20_0.vds
+# Journal file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.runs/divider_32_20_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source divider_32_20_0.tcl -notrace

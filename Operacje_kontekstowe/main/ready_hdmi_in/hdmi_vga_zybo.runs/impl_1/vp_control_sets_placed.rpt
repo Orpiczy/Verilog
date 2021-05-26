@@ -1,0 +1,89 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu May 13 00:41:51 2021
+| Host         : DESKTOP-6BHNJAC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file vp_control_sets_placed.rpt
+| Design       : vp
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            3 |
+|     10 |            4 |
+|     12 |            2 |
+|     14 |            2 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             520 |           71 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              26 |            4 |
+| Yes          | No                    | No                     |             322 |           34 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             280 |           43 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------+-------------------------------------+------------------+----------------+
+|  Clock Signal  |                       Enable Signal                      |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------------+-------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | vis/y_pos[3]_i_2_n_0                                     | vis/y_pos[3]_i_1__0_n_0             |                2 |              8 |
+|  clk_IBUF_BUFG | center/y_sc/inst/FSM_onehot_state[3]_i_1_n_0             |                                     |                1 |              8 |
+|  clk_IBUF_BUFG | center/x_sc/inst/FSM_onehot_state[3]_i_1_n_0             |                                     |                1 |              8 |
+|  clk_IBUF_BUFG | center/x_pos[10]_i_2__0_n_0                              | center/x_pos[6]_i_1_n_0             |                2 |             10 |
+|  clk_IBUF_BUFG | center/y_pos[10]_i_1_n_0                                 |                                     |                3 |             10 |
+|  clk_IBUF_BUFG | center/y_sc/inst/i[4]_i_2_n_0                            | center/y_sc/inst/i[4]_i_1_n_0       |                2 |             10 |
+|  clk_IBUF_BUFG | center/x_sc/inst/i[4]_i_2_n_0                            | center/x_sc/inst/i[4]_i_1_n_0       |                2 |             10 |
+|  clk_IBUF_BUFG | center/x_pos[10]_i_2__0_n_0                              | center/x_pos[10]_i_1_n_0            |                3 |             12 |
+|  clk_IBUF_BUFG | center/y_pos[10]_i_1_n_0                                 | center/y_pos[7]_i_1_n_0             |                2 |             12 |
+|  clk_IBUF_BUFG | center/y_sc/inst/lat_cnt[7]_i_2_n_0                      | center/y_sc/inst/lat_cnt[7]_i_1_n_0 |                3 |             14 |
+|  clk_IBUF_BUFG | center/x_sc/inst/lat_cnt[7]_i_2_n_0                      | center/x_sc/inst/lat_cnt[7]_i_1_n_0 |                3 |             14 |
+|  clk_IBUF_BUFG | center/y_sc/inst/qv                                      |                                     |                2 |             22 |
+|  clk_IBUF_BUFG | center/y_sc/inst/rv_reg                                  |                                     |                2 |             22 |
+|  clk_IBUF_BUFG | convert/inst/delay_synchro/(null)[8].single_delay/de_out | vis/x_pos[10]_i_1_n_0               |                3 |             22 |
+|  clk_IBUF_BUFG | center/x_sc/inst/qv                                      |                                     |                2 |             22 |
+|  clk_IBUF_BUFG | center/x_sc/inst/rv_reg                                  |                                     |                2 |             22 |
+|  clk_IBUF_BUFG |                                                          | calc/ram/position0_carry__0_n_3     |                4 |             26 |
+|  clk_IBUF_BUFG | center/y_sc/inst/dividend_reg_0                          |                                     |               11 |            104 |
+|  clk_IBUF_BUFG | center/x_sc/inst/dividend_reg_0                          |                                     |               10 |            104 |
+|  clk_IBUF_BUFG | center/m10[0]_i_1_n_0                                    | center/eof                          |               21 |            168 |
+|  clk_IBUF_BUFG |                                                          |                                     |               76 |            544 |
++----------------+----------------------------------------------------------+-------------------------------------+------------------+----------------+
+
+

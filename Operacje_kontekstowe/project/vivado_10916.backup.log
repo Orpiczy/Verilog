@@ -1,0 +1,235 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May  4 13:09:14 2021
+# Process ID: 10916
+# Current directory: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5740 D:\Dokumenty\AiR_rok_3\S6\Systemy_rekonfigurowalne\Wyznaczanie_srodka_ciezkosci\main_delayed\project\hdmi_vga_zybo.xpr
+# Log file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/vivado.log
+# Journal file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project'
+INFO: [Project 1-313] Project file moved from 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Konwersja_RGB_YCbCr/main_delayed/project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/ip_repo_delayed'; using path 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Konwersja_RGB_YCbCr/ip_repo_delayed' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Konwersja_RGB_YCbCr/ip_repo_delayed'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 817.863 ; gain = 90.332
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main/project/hdmi_vga_zybo.srcs/sources_1/new/centroid.v
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main/project/hdmi_vga_zybo.srcs/sources_1/new/centroid.v
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/divider_32_20.v
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/divider_32_20.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed May  5 00:31:11 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed May  5 00:33:13 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Tools/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hdmi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_hdmi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/delay_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/rgb2ycbcr_v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2ycbcr_v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/rgb2ycbcr_v2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2ycbcr_v2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/imports/new/centroid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centroid
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/imports/src/divider_32_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_32_20
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/new/vp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_hdmi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/src/mult_gen_0/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mult_gen_0
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/src/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity c_addsub_0
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a1348adfdc9e46d19e8927fc14250b7f --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L c_reg_fd_v12_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port y on this module [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v:90]
+ERROR: [VRFC 10-426] cannot find port x on this module [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v:89]
+ERROR: [VRFC 10-2063] Module <rgb2ycbcr_v2_0> not found while processing module instance <convert> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/new/vp.v:63]
+ERROR: [VRFC 10-2063] Module <centroid> not found while processing module instance <center> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/new/vp.v:92]
+ERROR: [VRFC 10-2063] Module <hdmi_out> not found while processing module instance <file_output> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v:114]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 903.258 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed May  5 01:05:35 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Tools/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hdmi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_hdmi_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/delay_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/rgb2ycbcr_v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2ycbcr_v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/rgb2ycbcr_v2_0/sim/rgb2ycbcr_v2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2ycbcr_v2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/imports/new/centroid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centroid
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/imports/src/divider_32_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_32_20
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/new/vp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi
+"xvhdl --incr --relax -prj tb_hdmi_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a1348adfdc9e46d19e8927fc14250b7f --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L c_reg_fd_v12_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <mult_32_20_lm> not found while processing module instance <instance_name> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/imports/src/divider_32_20.v:34]
+ERROR: [VRFC 10-2063] Module <hdmi_out> not found while processing module instance <file_output> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v:114]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed May  5 01:07:16 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 8
+[Wed May  5 01:07:23 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/synth_1/runme.log
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci
+WARNING: [IP_Flow 19-2162] IP 'mult_32_20_lm' is locked:
+* IP definition 'Multiplier (12.0)' for IP 'mult_32_20_lm' (customized with software release 2016.3) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+export_ip_user_files -of_objects  [get_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci] -lib_map_path [list {modelsim=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -force -quiet
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci
+WARNING: [IP_Flow 19-2162] IP 'mult_32_20_lm' is locked:
+* IP definition 'Multiplier (12.0)' for IP 'mult_32_20_lm' (customized with software release 2016.3) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+export_ip_user_files -of_objects  [get_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci] -lib_map_path [list {modelsim=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed May  5 01:09:20 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed May  5 01:10:31 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Simulation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci
+
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Tools/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_hdmi' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_hdmi_vlog.prj"
+"xvhdl --incr --relax -prj tb_hdmi_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a1348adfdc9e46d19e8927fc14250b7f --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xil_defaultlib -L c_reg_fd_v12_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <mult_32_20_lm> not found while processing module instance <instance_name> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/imports/src/divider_32_20.v:34]
+ERROR: [VRFC 10-2063] Module <hdmi_out> not found while processing module instance <file_output> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi.v:114]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed May  5 01:11:34 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed May  5 01:12:36 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed May  5 01:14:52 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/synth_1/runme.log
+[Wed May  5 01:14:53 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci] -no_script -reset -force -quiet
+remove_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd
+update_compile_order -fileset sources_1

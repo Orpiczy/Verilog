@@ -1,0 +1,18 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc8f9e1ce91a438a880a0e0086ce3326 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_CompactModule_behav xil_defaultlib.tb_CompactModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 16 for port x [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wstep_do_konfigurowania_struktury_FPGA/LogicModule/LogicModule.srcs/sim_1/new/tb_CompactModule.v:72]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CompactModule(LEVEL=0)
+Compiling module xil_defaultlib.CompactModule(LEVEL=1)
+Compiling module xil_defaultlib.CompactModule(LEVEL=2)
+Compiling module xil_defaultlib.CompactModule(LEVEL=3)
+Compiling module xil_defaultlib.CompactModule_default
+Compiling module xil_defaultlib.tb_CompactModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_CompactModule_behav

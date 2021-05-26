@@ -1,0 +1,1089 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 24 21:37:53 2021
+# Process ID: 15092
+# Current directory: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17404 D:\Dokumenty\AiR_rok_3\S6\Systemy_rekonfigurowalne\Maszyna_stanow\StateMachine\StateMachine.xpr
+# Log file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/vivado.log
+# Journal file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 801.855 ; gain = 69.551
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 24 22:25:59 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 24 22:26:33 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1160.691 ; gain = 0.137
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1160.691 ; gain = 0.137
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1240.945 ; gain = 386.031
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close [ open D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v w ]
+add_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v
+update_compile_order -fileset sources_1
+create_project test_palcz D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/Vivado/2018.2/data/ip'.
+add_files -norecurse -scan_for_includes {C:/Users/lukas/Downloads/machine.v C:/Users/lukas/Downloads/load_file.v C:/Users/lukas/Downloads/save_file.v}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/lukas/Downloads/tb_machine.v
+import_files -fileset sim_1 -norecurse C:/Users/lukas/Downloads/tb_machine.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 8
+[Wed Mar 24 23:45:49 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 24 23:46:20 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_machine' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_machine_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sim_1/imports/Downloads/tb_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67f963a4a6744e5dba20075eac6104cc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_machine_behav xil_defaultlib.tb_machine xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.machine
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_machine
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_machine_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim/xsim.dir/tb_machine_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 24 23:47:56 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.297 ; gain = 0.117
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_machine_behav -key {Behavioral:sim_1:Functional:tb_machine} -tclbatch {tb_machine.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_machine.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file D:DokumentyAiR_rok_3S6Systemy_rekonfigurowalneMaszyna_stanowmessage.txt could not be opened
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+WARNING: file C:/Users/Grzegorz/Desktop/maszyna/zapis.txt could not be opened
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+ERROR: File descriptor (0) passed to $fgetc in file D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v at line 39 is not valid.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_machine_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.520 ; gain = 33.238
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Mar 24 23:50:09 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Mar 24 23:50:36 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_machine' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_machine_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sim_1/imports/Downloads/tb_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_machine
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67f963a4a6744e5dba20075eac6104cc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_machine_behav xil_defaultlib.tb_machine xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.machine
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_machine
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_machine_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_machine_behav -key {Behavioral:sim_1:Functional:tb_machine} -tclbatch {tb_machine.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_machine.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file C:/Users/Grzegorz/Desktop/maszyna/zapis.txt could not be opened
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_machine_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1883.434 ; gain = 0.000
+current_project StateMachine
+file mkdir D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/save_module.v w ]
+add_files -fileset sim_1 D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/save_module.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/save_module.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/save_module.v
+close [ open D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v w ]
+add_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v
+update_compile_order -fileset sources_1
+current_project test_palcz
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_machine' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_machine_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sources_1/imports/Downloads/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.srcs/sim_1/imports/Downloads/tb_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_machine
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67f963a4a6744e5dba20075eac6104cc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_machine_behav xil_defaultlib.tb_machine xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.machine
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_machine
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_machine_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/test_palcz.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_machine_behav -key {Behavioral:sim_1:Functional:tb_machine} -tclbatch {tb_machine.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_machine.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_machine_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1886.629 ; gain = 0.000
+current_project StateMachine
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v w ]
+add_files -fileset sim_1 D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Mar 25 00:40:05 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1/runme.log
+update_compile_order -fileset sim_1
+launch_runs impl_1 -jobs 8
+[Thu Mar 25 00:41:06 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <state_machine> not found while processing module instance <uart> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:45]
+ERROR: [VRFC 10-2063] Module <save_file> not found while processing module instance <saving> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:53]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+refresh_design
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1909.262 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1909.262 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1928.672 ; gain = 33.027
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <state_machine> not found while processing module instance <uart> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:45]
+ERROR: [VRFC 10-2063] Module <save_file> not found while processing module instance <saving> [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:53]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/xsim.dir/tb_state_module_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 25 00:51:53 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1934.945 ; gain = 6.273
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port check_state [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:47]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1939.902 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1939.902 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1941.465 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port check_counter [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:50]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net counter is not permitted [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port check_counter [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:50]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net counter is not permitted [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port check_counter [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:50]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net counter is not permitted [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1941.465 ; gain = 0.000
+add_bp {D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v} 42
+remove_bps -file {D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v} -line 42
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1941.465 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Mar 25 01:10:58 2021] Launched synth_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Mar 25 01:11:27 2021] Launched impl_1...
+Run output will be captured here: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1950.102 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1950.102 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1950.102 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_state_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_state_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sim_1/new/tb_state_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_state_module
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Tools/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e4a4e7a5c76a4987a67c587b10954cc1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_state_module_behav xil_defaultlib.tb_state_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.load_file
+Compiling module xil_defaultlib.state_module
+Compiling module xil_defaultlib.save_file
+Compiling module xil_defaultlib.tb_state_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_state_module_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_state_module_behav -key {Behavioral:sim_1:Functional:tb_state_module} -tclbatch {tb_state_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_state_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_state_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1950.102 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 25 01:39:36 2021...

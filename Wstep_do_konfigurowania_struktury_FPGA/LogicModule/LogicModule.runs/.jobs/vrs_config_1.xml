@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wstep_do_konfigurowania_struktury_FPGA/LogicModule/LogicModule.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

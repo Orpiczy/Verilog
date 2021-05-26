@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May  6 11:01:57 2021
+# Process ID: 3992
+# Current directory: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15420 D:\Dokumenty\AiR_rok_3\S6\Systemy_rekonfigurowalne\Wyznaczanie_srodka_ciezkosci\main_delayed_sr\project\hdmi_vga_zybo.xpr
+# Log file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/vivado.log
+# Journal file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_hdmi.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+close_sim
+launch_simulation
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {0 0ns}
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {2 0ns}
+add_force {/tb_hdmi/sw} -radix unsigned {1 0ns}
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+close_sim

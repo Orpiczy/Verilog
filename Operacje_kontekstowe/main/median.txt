@@ -1,0 +1,134 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11.05.2021 12:01:24
+// Design Name: 
+// Module Name: median5x5
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module median5x5 #(
+    parameter H_SIZE = 83
+)(
+    input clk,
+    input de_in,
+    input h_sync_in,
+    input v_sync_in,
+    input mask_in,
+    
+    output de_out,
+    output h_sync_out,
+    output v_sync_out,
+    output [23:0] mask_out
+    );
+    
+//    wire [3:0] singal_in = {mask_in,de_in,h_sync_in,v_sync_in};
+    reg  [3:0] delay_line [24:0];
+//    wire [15:0] bram_in; Pytanie czy go faktycznie potrzeba
+    reg  [15:0] bram_in_reg = 0; 
+    wire [15:0] bram_out;
+//    reg  [15:0] bram_out_reg = 0; 
+    reg  [4:0]  line_index = 0;
+    reg [4:0] mask_sum = 0;
+    reg error_flag = 0;
+    integer i;
+    
+    always @(posedge clk)
+    begin
+        delay_line[0] = {mask_in,de_in,h_sync_in,v_sync_in};
+        mask_sum <= mask_sum + mask_in;
+        for (i = 1; i < 24; i = i + 1)
+        begin
+            mask_sum <= mask_sum + delay_line[i][0];
+            
+            if( (i% 5) == 4)
+            begin
+//            Wejscia linii
+                case(i)
+                    4 : begin
+                        bram_in_reg[3:0] <= delay_line[i];
+                    end
+                    
+                    9 : begin
+                        bram_in_reg[7:4] <= delay_line[i];     
+                     end 
+                    
+                    14 : begin
+                         bram_in_reg[11:8] <= delay_line[i]; 
+                    end
+                    
+                    19 : begin
+                         bram_in_reg[15:12] <= delay_line[i]; 
+                    end
+                    
+                    default : begin
+                        error_flag <= 1'b1;
+                    end
+                endcase             
+            end
+            else if ( i > 0 && (i% 5) == 0)
+            begin
+//            Wyjscia linii
+                case(i)
+                5 : begin
+                    delay_line[i] <= bram_out[3:0];
+                end
+                
+                10 : begin
+                    delay_line[i] <= bram_out[7:4];    
+                 end 
+                
+                15 : begin
+                     delay_line[i] <= bram_out[11:8];
+                end
+                
+                20 : begin
+                     delay_line[i] <= bram_out[15:12];
+                end
+                
+                default : begin
+                    error_flag <= 1'b1;
+                end
+            endcase             
+      
+            end
+            else
+            begin 
+//            glowne opoznienie
+                delay_line[i+1] = delay_line[i];
+            end
+        end
+     
+   end
+
+   
+   delayLinieBRAM_WP delay_ram(
+   .clk(clk),
+   .rst(1'b0),
+   .ce(1'b1),
+   .din(bram_in_reg),
+   . h_size(H_SIZE), //SPRAWDZ
+   .dout(bram_out)
+   );
+   
+   //   assign bram_in = bram_in_reg;
+   assign mask_out = mask_sum > 5'd12 ? 24'd16777215 :24'd0;
+   assign de_out = delay_line[24][1];
+   assign h_sync_out = delay_line[24][2];
+   assign v_sync_out = delay_line[24][3];
+   
+
+endmodule

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 25 01:11:00 2021
+# Process ID: 16912
+# Current directory: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1
+# Command line: vivado.exe -log load_file.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source load_file.tcl
+# Log file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1/load_file.vds
+# Journal file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source load_file.tcl -notrace

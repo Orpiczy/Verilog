@@ -1,0 +1,250 @@
+
+*** Running vivado
+    with args -log load_file.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source load_file.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source load_file.tcl -notrace
+Command: synth_design -top load_file -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13096 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.250 ; gain = 99.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'load_file' [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:23]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:35]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+WARNING: [Synth 8-639] system function call 'fgetc' not supported [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'load_file' (1#1) [D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.srcs/sources_1/new/load_file.v:23]
+WARNING: [Synth 8-3330] design load_file has an empty top module
+WARNING: [Synth 8-3917] design load_file has port send driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[7] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[6] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[5] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[4] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[3] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[2] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[1] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 410.711 ; gain = 153.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.711 ; gain = 153.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.711 ; gain = 153.602
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.711 ; gain = 153.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3330] design load_file has an empty top module
+WARNING: [Synth 8-3917] design load_file has port send driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[7] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[6] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[5] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[4] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[3] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[2] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[1] driven by constant 0
+WARNING: [Synth 8-3917] design load_file has port data[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     9|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     9|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 514.953 ; gain = 257.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 636.406 ; gain = 392.172
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Maszyna_stanow/StateMachine/StateMachine.runs/synth_1/load_file.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file load_file_utilization_synth.rpt -pb load_file_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 636.406 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 25 01:11:21 2021...

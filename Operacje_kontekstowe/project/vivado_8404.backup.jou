@@ -1,0 +1,220 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May  5 10:19:23 2021
+# Process ID: 8404
+# Current directory: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16204 D:\Dokumenty\AiR_rok_3\S6\Systemy_rekonfigurowalne\Wyznaczanie_srodka_ciezkosci\main_delayed_sr\project\hdmi_vga_zybo.xpr
+# Log file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/vivado.log
+# Journal file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/xbip_pipe_v3_0_vh_rfs.vhd D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/xbip_bram18k_v3_0_vh_rfs.vhd D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/xbip_utils_v3_0_vh_rfs.vhd D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/mult_gen_v12_0_vh_rfs.vhd}
+import_files -norecurse {D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/xbip_pipe_v3_0_vh_rfs.vhd D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/xbip_bram18k_v3_0_vh_rfs.vhd D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/xbip_utils_v3_0_vh_rfs.vhd D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/hdl/mult_gen_v12_0_vh_rfs.vhd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+set_property  ip_repo_paths  {d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Konwersja_RGB_YCbCr/ip_repo_delayed D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0} [current_project]
+update_ip_catalog
+export_ip_user_files -of_objects  [get_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/hdl/mult_gen_v12_0_vh_rfs.vhd] -no_script -reset -force -quiet
+remove_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/hdl/mult_gen_v12_0_vh_rfs.vhd
+export_ip_user_files -of_objects  [get_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/hdl/xbip_bram18k_v3_0_vh_rfs.vhd] -no_script -reset -force -quiet
+remove_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/hdl/xbip_bram18k_v3_0_vh_rfs.vhd
+export_ip_user_files -of_objects  [get_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/hdl/xbip_pipe_v3_0_vh_rfs.vhd] -no_script -reset -force -quiet
+remove_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/hdl/xbip_pipe_v3_0_vh_rfs.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/synth/mult_32_20_lm.vhd] -no_script -reset -force -quiet
+remove_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/imports/synth/mult_32_20_lm.vhd
+create_ip -name divider_32_20 -vendor user.org -library user -version 1.0 -module_name divider_32_20_0 -dir d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip
+set_property -dict [list CONFIG.DIVIDEND_W {18} CONFIG.DIVISOR_W {13}] [get_ips divider_32_20_0]
+generate_target {instantiation_template} [get_files d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci]
+generate_target all [get_files  d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci]
+catch { config_ip_cache -export [get_ips -all divider_32_20_0] }
+export_ip_user_files -of_objects [get_files d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci]
+launch_runs -jobs 8 divider_32_20_0_synth_1
+export_simulation -of_objects [get_files d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci] -directory D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files/sim_scripts -ip_user_files_dir D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files -ipstatic_source_dir D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+add_force {/tb_hdmi/sw} -radix hex {0 0ns}
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {0 0ns}
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+set_property -dict [list CONFIG.DIVIDEND_W {32} CONFIG.DIVISOR_W {21}] [get_ips divider_32_20_0]
+generate_target all [get_files  d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci]
+catch { config_ip_cache -export [get_ips -all divider_32_20_0] }
+export_ip_user_files -of_objects [get_files d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci] -no_script -sync -force -quiet
+reset_run divider_32_20_0_synth_1
+launch_runs -jobs 8 divider_32_20_0_synth_1
+export_simulation -of_objects [get_files d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci] -directory D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files/sim_scripts -ip_user_files_dir D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files -ipstatic_source_dir D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_property  ALL_PROPS  [get_ips divider_32_20_0]
+generate_target all [get_files  d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci]
+catch { config_ip_cache -export [get_ips -all divider_32_20_0] }
+export_ip_user_files -of_objects [get_files d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci] -no_script -sync -force -quiet
+reset_run divider_32_20_0_synth_1
+launch_runs -jobs 8 divider_32_20_0_synth_1
+export_simulation -of_objects [get_files d:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci] -directory D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files/sim_scripts -ip_user_files_dir D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files -ipstatic_source_dir D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close [ open D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid.v w ]
+add_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {0 0ns}
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {1 0ns}
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {2 0ns}
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {2 0ns}
+run 40 us
+run 40 us
+run 40 us
+add_force {/tb_hdmi/vp_i/sw} -radix unsigned {3 0ns}
+run 40 us
+add_force {/tb_hdmi/vp_i/sw} -radix unsigned {3 0ns}
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+run 40 us
+close [ open D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v w ]
+add_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed_sr/project/hdmi_vga_zybo.srcs/sources_1/new/vis_centroid_circle.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+run 40 us
+run 40 us
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_hdmi.tcl
+run 40 us
+add_force {/tb_hdmi/sw} -radix unsigned {3 0ns}
+run 40 us
+run 40 us

@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May  4 13:09:14 2021
+# Process ID: 10916
+# Current directory: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5740 D:\Dokumenty\AiR_rok_3\S6\Systemy_rekonfigurowalne\Wyznaczanie_srodka_ciezkosci\main_delayed\project\hdmi_vga_zybo.xpr
+# Log file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/vivado.log
+# Journal file: D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main/project/hdmi_vga_zybo.srcs/sources_1/new/centroid.v
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main/project/hdmi_vga_zybo.srcs/sources_1/new/centroid.v
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/divider_32_20.v
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/divider_32_20.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci
+export_ip_user_files -of_objects  [get_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci] -lib_map_path [list {modelsim=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -force -quiet
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci
+export_ip_user_files -of_objects  [get_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci] -lib_map_path [list {modelsim=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci] -no_script -reset -force -quiet
+remove_files  D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/main_delayed/project/hdmi_vga_zybo.srcs/sources_1/ip/mult_32_20_lm/mult_32_20_lm.xci
+add_files -norecurse -scan_for_includes D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd
+import_files -norecurse D:/Dokumenty/AiR_rok_3/S6/Systemy_rekonfigurowalne/Wyznaczanie_srodka_ciezkosci/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd
+update_compile_order -fileset sources_1
